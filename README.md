@@ -12,5 +12,5 @@ Completed by Evgenii Makin at Friday, August 24, 2018 10:53 AM GMT
 Andrew Ng
 Stanford University
 ```
-[Certificate]https://www.coursera.org/account/accomplishments/certificate/9M2TMMR8DYKK "Certificate"
+https://www.coursera.org/account/accomplishments/certificate/9M2TMMR8DYKK
 

@@ -229,5 +229,23 @@ fprintf(['Cost at theta = [%f ; %f], if lambda = 3 : %f '...
 fprintf('Program paused. Press enter to continue.\n');
 pause;
 %% =========== Part 9.2:  Optional (ungraded) exercises =============
+%  Next, you should implement the learningCurvePro function. 
+
+figure(7);
+lambda = 0.01;
+num_iter = 50;
+[error_train, error_val] = learningCurvePro(X_poly, y, X_poly_val, yval, lambda, num_iter);
+plot(1:m, error_train, 1:m, error_val);
+title(sprintf('Polynomial Regression Learning Curve Pro (lambda = %f)', lambda));
+xlabel('Number of training examples')
+ylabel('Error')
+axis([0 13 0 150])
+legend('Train', 'Cross Validation')
+
+fprintf('# Training Examples\tTrain Error\tCross Validation Error\n');
+for i = 1:m
+    fprintf('  \t%d\t\t%f\t%f\n', i, error_train(i), error_val(i));
+end
+
 fprintf('Program paused. Press enter to continue.\n');
 pause;
